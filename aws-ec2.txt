@@ -1,0 +1,10 @@
+$sudo passwd root
+输入密码
+
+$su root
+
+查看本机的id_rsa.pub
+cat ~/.ssh/id_rsa.pub
+
+$echo  'XXX'  > ~/.ssh/authorized_keys
+
