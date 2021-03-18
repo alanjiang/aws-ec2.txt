@@ -18,3 +18,8 @@ export JAVA_HOME=/usr/home/softwares/jdk
 export PATH=$PATH:$JAVA_HOME/bin
 
 export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+
+
+3  文件上传工具
+
+yum install lrzsz
