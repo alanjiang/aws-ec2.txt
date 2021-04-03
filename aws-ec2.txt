@@ -1,4 +1,8 @@
 1 connect to server with root
+
+ssh -i  /Users/pengjiang/Desktop/WAS-Keys/ec2-02.pem   ec2-user@169.XX.XX.XX
+chmod 600 /Users/pengjiang/Desktop/WAS-Keys/ec2-02.pem
+
 $sudo passwd root
 输入密码
 
@@ -7,11 +11,13 @@ $su root
 查看本机的id_rsa.pub
 cat ~/.ssh/id_rsa.pub
 
-$echo  'XXX'  > ~/.ssh/authorized_keys
+$echo  'XXX'  >>  ~/.ssh/authorized_keys
 
 2 JDK
+免登录下载：
+wget -c --no-cookies --no-check-certificate --header "Cookie: oraclelicense=accept-securebackup-cookie" https://javadl.oracle.com/webapps/download/GetFile/1.8.0_261-b12/a4634525489241b9a9e1aa73d9e118e6/linux-i586/jdk-8u261-linux-x64.tar.gz
 
-wegt http://download.oracle.com/otn-pub/java/jdk/8u171-b11/512cd62ec5174c3487ac17c61aaa89e8/jdk-8u171-linux-i586.tar.gz
+配置环境变量：
 
 export JAVA_HOME=/usr/home/softwares/jdk
 
@@ -22,4 +28,6 @@ export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 
 3  文件上传工具
 
-yum install lrzsz
+yum install lrzsz -y
+yum install wget -y 
+
