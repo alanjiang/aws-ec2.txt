@@ -8,6 +8,8 @@ $sudo passwd root
 
 $su root
 
+ssh-keygen -t rsa
+
 查看本机的id_rsa.pub
 cat ~/.ssh/id_rsa.pub
 
